@@ -1,0 +1,32 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+@layer base {
+  body {
+    @apply font-['Roboto']
+  }
+}
+@layer components {
+  .tqd-subheadline {
+    @apply flex justify-center items-center my-16;
+  }
+  .tqd-subheadline-deco-line {
+    @apply w-8 h-px bg-gray-200;
+  }
+  .tqd-subheadline-label {
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+  }
+  .tqd-button {
+    @apply text-center uppercase tracking-wider py-4 px-8 text-[13px] font-semibold cursor-pointer shadow-xl rounded hover:bg-opacity-95;
+  }
+  .tqd-top-menu-item {
+    @apply cursor-pointer py-1 hover:text-gray-800 ;
+  }
+  .tqd-nav-menu-item{
+    @apply cursor-pointer py-5 bg-black/80 text-center text-white border-b border-gray-200
+  }
+ 
+}
